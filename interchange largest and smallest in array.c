@@ -61,3 +61,18 @@ int find_biggest_pos(int arr[10], int n)
     }
     return pos;
 }
+
+int find_smallest_pos(int arr[10], int n)
+{
+    int i,small = arr[0],pos=0;
+    for(i=1;i<n;i++)
+    {
+        if(arr[i] < small)
+        {
+            small = arr[i];
+            pos = i;
+        }
+        
+    }
+    return pos;
+}
